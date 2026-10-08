@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #F3EFE7;
+  --surface: #EAE5DA;
+  --surface-muted: #E2DDD1;
+  --text: #16150F;
+  --text-secondary: #5E5A50;
+  --hairline: rgba(22, 21, 15, 0.12);
+  --hairline-subtle: rgba(22, 21, 15, 0.06);
+  --accent: #D93A17;
+  --dark-bg: #0E0E0C;
+  --dark-surface: #1A1A17;
+  --dark-text: #F3EFE7;
+  --dark-secondary: #A9A599;
+  --dark-hairline: rgba(243, 239, 231, 0.12);
+  --dark-accent: #FF6A45;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Plus Jakarta Sans", "Inter", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-display {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.025em;
+}
+
+.font-editorial {
+  font-family: "Newsreader", Georgia, serif;
+}
+
+.font-mono-data {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hairline border utilities */
+.border-hairline {
+  border-color: var(--hairline);
+}
+
+.border-hairline-subtle {
+  border-color: var(--hairline-subtle);
+}
+
+.border-dark-hairline {
+  border-color: var(--dark-hairline);
+}
+
+/* Custom scrollbar matching paper and ink */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--surface-muted);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}

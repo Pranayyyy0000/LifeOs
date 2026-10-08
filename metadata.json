@@ -1,0 +1,6 @@
+{
+  "name": "LifeOS",
+  "description": "LifeOS turns messy real-life goals and responsibilities into a realistic plan that a person can actually follow.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
